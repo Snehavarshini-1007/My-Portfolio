@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mediaqueries.css ">
+</head>
+<body>
+  <!-- Navigation bar -->
+    <nav id="desktop-nav">
+        <div class="logo">Snehavarshini</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">Snehavarshini</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+      <!-- profile section -->
+      <section id="profile">
+        <div class="section__pic-container">
+            <img src="./images/snehavarshini.JPG" alt="snehavarshiniprofilepic" style ="width: 400px">
+        </div>
+         <div class="section__text">
+            <p class="section__text__p1">Hello, I'm </p>
+            <h1 class="title">Snehavarshini</h1>
+            <p class="section__text__p2">Data Analyst</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./images/Snehavarshini_resume.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <!-- /Social media pages -->
+            <div id="socials-container">
+              <img src="./images/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/snehavarshini-shanmugam-06a07b2b0/'">
+              <img src="./images/github.png" alt="My github page" class="icon"onclick="location.href='https://github.com/Snehavarshini-1007'">
+              <img src="./images/leetcode.png" alt="My leetcode page" class="icon"onclick="location.href='https://leetcode.com/Snehaashan_1007/'">
+            </div>
+         </div>
+      </section>
+      <!-- About section -->
+      <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img
+              src="./images/sneha.jpg"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <!-- <div class="details-container">
+                <img
+                  src="./images/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p>2+ years <br />Frontend Development</p>
+              </div> -->
+              <div class="details-container">
+                <img
+                  src="./images/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>B.Tech Artificial Intelligence and Data Science<br />8.79 CGPA (5TH SEMESTER)</p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="./images/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>12th Grade<br />96 %</p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="./images/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>10th Grade<br />93 %</p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                I am an enthusiastic artificial intelligence student with a strong focus on machine learning and deep learning. My expertise extends to data analysis, where I am skilled in using tools such as Tableau and Power BI. As a MERN stack developer, I successfully completed an internship at Magicsense, showcasing my abilities through the development of a portfolio.
+
+                In addition to my technical skills, I have a passion for UI/UX design, utilizing the Figma tool to create visually appealing and user-friendly interfaces. Currently, I am gaining valuable experience as an intern in machine learning and data analysis at @Mentorness, contributing to projects that merge my skills in AI, development, and design. This diverse skill set positions me as a versatile professional in the technology industry, eager to continue learning and contributing to innovative projects.
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./images/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#experience'"
+        />
+      </section>
+      <!-- Skills section -->
+      <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Skills</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./images/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Machine learning</h3>
+                    <p>NLP/CV</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./images/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Web Development</h3>
+                    <p>HTML/CSS/JS</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./images/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>DATABASE</h3>
+                    <p>MySQL/MongoDb</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./images/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>ReactJS/NodeJS</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./images/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Programming languages</h3>
+                    <p>C/Java/Python</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./images/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Big Data Analytics</h3>
+                    <p>Spark</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="experience-sub-title">Tools</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./images/powerbi.jpg"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Power BI</h3>
+                    <p>Data Analysis</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./images/tableau.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Tableau</h3>
+                    <p>Data Analysis</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./images/figma.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Figma</h3>
+                    <p>UI/UX Designing</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./images/git.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Git</h3>
+                    <p>Version control - Beginner</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./images/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+        />
+        </section>
+        <!-- projects section -->
+        <section id="projects">
+          <p class="section__text__p1">Browse My Recent</p>
+          <h1 class="title">Projects</h1>
+          <!-- projects 1 -->
+          <div class="experience-details-container">
+            <div class="about-containers">
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./images/ml.png"
+                    alt="Project 1"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Online News Article Classification</h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/Snehavarshini-1007/FDS-PROJECT'"
+                  >
+                    Github
+                  </button>
+                </div>
+              </div>
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./images/ml.png"
+                    alt="Project 2"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Sleep Stress Level Detection</h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/Snehavarshini-1007/Stress-level-detection-in-and-through-sleep-using-machine-learning-algorithms'"
+                  >
+                    Github
+                  </button>
+                </div>
+              </div>
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./images/react.png"
+                    alt="Project 3"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">KEC Online Payment App</h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/rahshi21/KEC-Online-Payment-App-WT_PROJECT-'"
+                  >
+                    Github
+                  </button>
+                </div>
+              </div>
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./images/hcj.png"
+                    alt="Project 3"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Live Weather App</h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/Snehavarshini-1007/WEATHER---APP'"
+                  >
+                    Github
+                  </button>
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://snehavarshini-1007.github.io/WEATHER---APP/'"
+                  >
+                    Live Demo
+                  </button>
+                </div>
+              </div>
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./images/cv.png"
+                    alt="Project 3"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Human Pose Detection using MoveNet Algorithm with Spatiotemporal data</h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/Snehavarshini-1007/HUMAN_POSE_CLASSIFICATION_USING_MOVENET_WITH_SPATIOTEMPORAL_DATA'"
+                  >
+                    Github
+                  </button>
+                </div>
+              </div>
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./images/spark.png"
+                    alt="Project 3"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Prediction of Heart Disease using ML algorithms - A PySpark Approach</h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://www.kaggle.com/code/snehavarshinis/prediction-of-heart-disease-using-pyspark-ml'"
+                  >
+                    Kaggle
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            src="./images/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#contact'"
+          />
+        </section>
+        <section id="contact">
+          <p class="section__text__p1">Get in Touch</p>
+          <h1 class="title">Contact Me</h1>
+          <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+              <img
+                src="./images/email.png"
+                alt="Email icon"
+                class="icon contact-icon email-icon"
+              />
+              <p><a href="mailto:examplemail@gmail.com">snehavarshinishanmugam@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+              <img
+                src="./images/contact.png"
+                alt="LinkedIn icon"
+                class="icon contact-icon"
+              />
+              <p>+91 9360056464</p>
+            </div>
+          </div>
+        </section>
+
+        <footer>
+          <nav>
+            <div class="nav-links-container">
+              <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+              </ul>
+            </div>
+          </nav>
+          <p>Copyright &#169; 2024 Snehavarshini. All Rights Reserved.</p>
+        </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
